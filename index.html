@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProductivityPlus Mobile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚡ ProductivityPlus</h1>
+    <button id="themeToggle">🌞</button>
+  </header>
+
+  <main>
+    <section class="card" id="clock">
+      <h2>🕒 Clock</h2>
+      <p id="time">00:00:00</p>
+      <p id="date"></p>
+    </section>
+
+    <section class="card" id="quote">
+      <h2>💬 Daily Quote</h2>
+      <p id="quoteText">Loading...</p>
+    </section>
+
+    <section class="card" id="weather">
+      <h2>🌦️ Weather</h2>
+      <input id="cityInput" type="text" placeholder="Enter city">
+      <button id="getWeather">Get</button>
+      <p id="weatherResult"></p>
+    </section>
+
+    <section class="card" id="tasks">
+      <h2>✅ Tasks</h2>
+      <div class="inputRow">
+        <input id="taskInput" type="text" placeholder="New task">
+        <button id="addTask">+</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section class="card" id="notes">
+      <h2>🗒️ Notes</h2>
+      <textarea id="noteArea" placeholder="Write something..."></textarea>
+      <button id="saveNote">Save</button>
+      <div id="savedNotes"></div>
+    </section>
+
+    <section class="card" id="pomodoro">
+      <h2>⏱️ Pomodoro Timer</h2>
+      <p id="timer">25:00</p>
+      <div class="btnRow">
+        <button id="startTimer">Start</button>
+        <button id="resetTimer">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Kameshwaran ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
